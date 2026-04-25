@@ -1,356 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Personal profile - Abuashia Michael Jinks</title>
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Full-Stack Developer Portfolio - Abuashia Michael Jinks</title>
+
+    <!-- Stylesheet/css file -->
+     <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- Google Fonts Link-->
+     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+     
+     <!-- Font Awesome Link-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
 
-        <!-- HEADER SECTION  -->
-        <header>
-            <nav>
-                <div>
-                <h1>Abuashia Michael Jinks</h1>
+      <!-- Sticky Navigation -->
+       <header class="navbar" id="navbar">
+        <nav>
+          <div class="nav-container">
+            <div class="logo">
+              Abuashia Michael Jinks
+            </div>
+            <div class="hamburger" id="hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+        
+          <div class="container hero-grid">
+            <div class="hero-content">
+              <h1>Abuashia Michael Jinks</h1>
+              <div class="hero-tagline">
+                Full-Stack Developer & Creative Problem Solver In Training
+              </div>
+              <p class="hero-desc">
+                Crafting responsive, user-centric digital experiences with modern HTML5, CSS3, and JavaScript.
+              </p>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work <i class="fas fa-arrow-right"></i></a>
+                <a href="./images/jinks-cv.pdf" download="Abuashia-Michael-Jinks-CV.pdf" class="btn btn-outline">Download CV <i class="fas fa-download"></i></a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img src="./images/profile.png" alt="Abuashia Michael - professional headshot">
+            </div>
+          </div>
+        </section>
+        
+        <!-- About Me Section -->
+        <section id="about">
+          <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+              <div class="about-me-img">
+                <img src="./images/jinkz.png" alt="Abuashia Michael - professional headshot">
+              </div>
+              <div class="about-text">
+                <p>Hey! I'm Jinks, a passionate full-stack developer in-training based in Abuja, Nigeria with a Bachelor’s degree in Mechanical Engineering and a <strong>strong technical background</strong>. My journey into web development started when I built my first simple webpage during university for an Arduino Project — the instant visual feedback and creative logic hooked me forever. </p>
+                <p>I'm currently diving deeper into full-stack development and love combining minimal design with powerful interactivity. What motivates me is the ability to build absolutely anything and connect people while making the web more accessible, inclusive, and beautiful.</p>
+                <p>Outside of coding, I am a hardware product designer & enthusiast, I love building things<strong><em>und ich liebe es zu wandern</em></strong>. I believe that curiosity with consistent learning and practice are the keys to growth. Let's build something meaningful together!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Skills Section (Cards + icons) -->
+        <section id="skills" style="background: #f9fafb;">
+          <div class="container">
+            <h2 class="section-title">Technologies and Tools I've Learned</h2>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git & GitHub</h3>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-th-large"></i>
+                <h3>Flexbox & Grid</h3>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-figma"></i>
+                <h3>Figma</h3>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-code-branch"></i>
+                <h3>VS Code / Chrome DevTools</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Projects section -->
+        <section id="projects">
+          <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+              
+              <!-- Project 1 -->
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="./images/projects/project-1.png" alt="Travel Agency Website preview">
                 </div>
-                <!-- MOBILE NAVIGATION -->
-                <div class="small-screen">
-                    <i class="fa-solid fa-bars"></i>
-                    <ul class="nav-links-mobile">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="project-info">
+                  <h3>Horizon Tours</h3>
+                  <p>Immersive virtual touring website with dynamic destinations anywher within nigeria, custom booking for major destinations, and smooth animations. Fully responsive on all device types.</p>
+                  <div class="tech-stack">
+                    <span>HTML5</span>
+                    <span>JavaScript</span>
+                    <span>CSS Grid</span>
+                    <span>API</span>
+                    <span>Flexbox</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub </a>
+                    <a href="#">Live Demo → </a>
+                  </div>
                 </div>
-
-
-                <!-- DESKTOP NAVIGATION -->
-                <div class="big-screen">
-                    <ul class="nav-links-desktop">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+              </div>
+              
+              <!-- Project 2 -->
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="./images/projects/project-2.png" alt="Restaurant website preview">
                 </div>
-            </nav>
-
-        </header>
-
-        <!-- MAIN SECTIONS -->
-        <main>
-
-            <!-- HERO SECTION -->
-            <section id="home">
-                <div>
-                    <h1>ABUASHIA </h1>
-                    <h1>Michael Jinks </h1>
-                    <h2><em>Full-Stack Developer In Training</em></h2>
-                    <h3>I build clean, user-centric digital experiences</h3>
-                    <a href="#projects">View My Work</a>
+                <div class="project-info">
+                  <h3>Astro Bistro</h3>
+                  <p>Modern coding and typing training website with AI integration that trains users on good command of the computer keyboard and concurrently introducing the user to basic programming.</p>
+                  <div class="tech-stack">
+                    <span>CSS Grid</span>
+                    <span>JavaScript</span>
+                    <span>FontAwesome</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#">Preview →</a>
+                  </div>
                 </div>
-                <div>
-                    <img src="./images/profile.png" alt="Photo of Jinks" height="800">
-                </div>
+              </div>
                 
-            </section>
+              <!-- Project 3 -->
+              <div class="project-card">
+                <div class="project-img">
+                    <img src="./images/projects/project-3.png" alt="E-commerce store concept">
+                </div>
+                <div class="project-info">
+                    <h3>Shopit Marketplace (Upcoming)</h3>
+                    <p>Full e-commerce site with product grid, shopping cart and easy checkout and payment function integrated — currently in development witha a modern frontend stack.</p>
+                  <div class="tech-stack">
+                      <span>React (Soon)</span>
+                      <span>CSS Modules</span>
+                      <span>API</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#">Coming Soon</a>
+                  </div>
+                </div>
+              </div>
+                  
+              <!-- 4th project -->
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="./images/projects/project-4.png" alt="portfolio concept">
+                </div>
+                <div class="project-info">
+                  <h3>My Treats (French-Style Bakery)</h3>
+                  <p>A modern and clean webpage for a fictional French-style bakery and lounge located at new Haven Enugu. This is a group project built by a team of four (4)as part of the ETTP Assessment</p>
+                  <div class="tech-stack">
+                    <span>HTML/CSS</span>
+                    <span>JS</span>
+                    <span>Grid/Flex</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a> <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" style="background: #f9fafb;">
+          <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+              <div class="contact-form">
+                <h3>Let's talk</h3>
+                <p style="margin-bottom: 1.5rem;">Have a project in mind? Feel free to reach out — I'd love to collaborate!</p>
+                <form action="#" method="post">
+                  <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea rows="4" placeholder="Tell me about your ideas..."></textarea>
+                  </div>
+                  <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+              </div>
+              <div class="contact-info">
+                <h3>Connect with me</h3>
+                <p>I'm active on social media and always excited to meet new people in tech. Let's create magic together.</p>
+                <div class="social-links">
+                  <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="X"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="contact-email">
+                  <i class="fas fa-envelope" style="color:#2563eb;"></i> 
+                  <span>michaeljinksa@gmail.com</span>
+                </div>
+                <div class="contact-email">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Abuja, Nigeria / Remote | Hybrid | On-Site</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+      <!-- Footer Section -->
+      <footer>
+        <div class="container">
+          <div class="social-icons-footer">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <p><small>&copy; 2026 Abuashia Michael Jinks | All rights reserved. Crafted with HTML5 & CSS3 for the ENSG & Turing Tech LLC Program.</small></p>
+        </div>
+      </footer>
 
-            <!-- ABOUT SECTION  -->
-            <section id="about">
-                <div class="section-heading">
-                    <h2>Who I Am</h2>
-                </div>
-                <div class="about-grid">
-                    <div class="about-img">
-                        <img src="./images/jinkz.png" alt="Photo of Jinks">
-                    </div>
-                    <div class="about-content">
-                        <p>Hey, I am Michael Jinks Abuashia is a results-driven professional with a Bachelor’s degree in Mechanical Engineering and a <strong>strong technical background</strong>. Experienced in troubleshooting, technical documentation, and providing field support in high-stakes environments. </p> 
-                        <p>I am a student of life and ENSG currently learning full-stack web development and Artificial Intelligence at <strong>Turing Tech LLC</strong>. </p>
-                        <p>I am a Nigerian and my mothertounge is <strong>English.</strong> Additionally, I speak the following languages:</p>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Language</th>
-                                    <th>Level</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>German</td>
-                                    <td>A2</td>
-                                </tr>
-                                <tr>
-                                    <td>2.</td>
-                                    <td>Hausa</td>
-                                    <td>B1</td>
-                                </tr>
-                                <tr>
-                                    <td>3.</td>
-                                    <td>Chinese</td>
-                                    <td>A1</td>
-                                </tr>
-                                <tr>
-                                    <td>4.</td>
-                                    <td>Italian</td>
-                                    <td>A1</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </section>
 
-            <!-- SKILLS SECTION-->
-            <section id="skills">
-                <div class="section-heading">
-                    <h2>My Skills</h2>
-                </div>
-                <div>
-                    <div class="sub-section">
-                        <div class="sub-heading">
-                            <h3>Technologies I've Learnt</h3>
-                        </div>
-                        <!-- grids with -->
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <i class="fab fa-html5"></i>
-                                <h4>HTML5</h4>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fab fa-css3"></i>
-                                <h4>CSS3</h4>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fab fa-git-alt"></i>
-                                <h4>Git & GitHub</h4>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fab fa-buromobelexperte"></i>
-                                <h4>Flexbox & Grid</h4>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fa-brands fa-tailwind-css"></i>
-                                <h4>Tailwind CSS</h4>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fab fa-js"></i>
-                                <h4>JavaScript</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sub-section">
-                        <div class="sub-heading">
-                            <h3>Tools I've Used</h3>
-                        </div>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <i class="fa-solid fa-code"></i>
-                                <h4>VS Code</h4>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fab fa-dev"></i>
-                                <h4>Chrome Dev</h4>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fab fa-figma"></i>
-                                <h4>Figma</h4>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fa-solid fa-laptop-code"></i>
-                                <h4>Terminal</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+  <!-- Scripts for Smooth scroll & hamburger toggle -->
+  <script>
+    // Smooth scroll for nav links (already native scroll-behavior, but ensure compatibility)
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId.startsWith('#')) {
+          e.preventDefault();
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // close mobile menu after click
+            const nav = document.getElementById('navLinks');
+            if (nav.classList.contains('active')) {
+              nav.classList.remove('active');
+            }
+          }
+        }
+      });
+    });
 
-            <!-- PROJECTS SECTION  -->
-            <section id="projects">
-                <div class="section-heading">
-                    <h2>My Projects</h2>
-                </div>
-                
-                <div class="projects-grid">
-                    <!-- project 1 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./images/projects/project-1.png" alt="shoppit-marketplace"></div>
-                        <div>
-                            <h3>Project Title</h3>
-                            <p>Long project description </p>
-                            <div class="stack">
-                                <span>CSS3</span>
-                                <span>CSS Grid</span>
-                                <span>Flexbox</span>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#">GitHub Repo</a><i class="fab fa-github">Github</i>
-                                <a href="#">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- project 1 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./images/projects/project-1.png" alt="shoppit-marketplace"></div>
-                        <div>
-                            <h3>Project Title</h3>
-                            <p>Long project description </p>
-                            <div class="stack">
-                                <span>CSS3</span>
-                                <span>CSS Grid</span>
-                                <span>Flexbox</span>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#">GitHub Repo</a><i class="fab fa-github">Github</i>
-                                <a href="#">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- project 1 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./images/projects/project-1.png" alt="shoppit-marketplace"></div>
-                        <div>
-                            <h3>Project Title</h3>
-                            <p>Long project description </p>
-                            <div class="stack">
-                                <span>CSS3</span>
-                                <span>CSS Grid</span>
-                                <span>Flexbox</span>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#">GitHub Repo</a><i class="fab fa-github">Github</i>
-                                <a href="#">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- project 1 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./images/projects/project-1.png" alt="shoppit-marketplace"></div>
-                        <div>
-                            <h3>Project Title</h3>
-                            <p>Long project description </p>
-                            <div class="stack">
-                                <span>CSS3</span>
-                                <span>CSS Grid</span>
-                                <span>Flexbox</span>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#">GitHub Repo</a><i class="fab fa-github">Github</i>
-                                <a href="#">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- project 1 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./images/projects/project-1.png" alt="shoppit-marketplace"></div>
-                        <div>
-                            <h3>Project Title</h3>
-                            <p>Long project description </p>
-                            <div class="stack">
-                                <span>CSS3</span>
-                                <span>CSS Grid</span>
-                                <span>Flexbox</span>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#">GitHub Repo</a><i class="fab fa-github">Github</i>
-                                <a href="#">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- project 1 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./images/projects/project-1.png" alt="shoppit-marketplace"></div>
-                        <div>
-                            <h3>Project Title</h3>
-                            <p>Long project description </p>
-                            <div class="stack">
-                                <span>CSS3</span>
-                                <span>CSS Grid</span>
-                                <span>Flexbox</span>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#">GitHub Repo</a><i class="fab fa-github">Github</i>
-                                <a href="#">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-            
-            <!-- CONTACT SECTION -->
-            <section id="contact">
-                <div class="section-heading">
-                    <h2>Contact Me</h2>
-                </div>
-                
-                <div>
-                    <form action="" method="" id="contact-form">
-                        <fieldset>
-                            <legend>Your Informaion</legend>
-                            <div>
-                                <input type="text" name="fullname" id="fullname" placeholder="Your Name (e.g. Margie Q)" required>
-                            </div>
-                            <div>
-                                <input type="email" name="email" id="email" placeholder="Your email (e.g. email@ymcmb.com)" required>
-                            </div>
-                        </fieldset>
-                            <div>
-                                <textarea name="message" id="message" placeholder="Your Message Here" cols="30" rows="5"></textarea>
-                            </div>
-                            <a href="#">Send Message</a>
-                    </form>
-                </div>
-                <div>
-                    <h2>Get In Touch!</h2>
-                    <span>Have a project in mind? <br> Feel free to reach out - I'd love to collaborate. Shoot me a message, connect with me on my socials even if just to keep in touch</span>
-                    
-                <i class="fa-brands fa-linkedin fa-sm"></i>
-                <i class="fa-brands fa-github fa-sm"></i>
-                <i class="fa-brands fa-mail fa-sm"></i>
-                </div>
-            </section>
-        </main>
-            <footer>
-                <div>
-                    <div>
-                        <p><strong>Connect with me</strong></p>
-                        <ul>
-                            <li><a href="https://github.com/wanloq">Github</a></li>
-                            <li><a href="https://linkedin/in/wan-loq">Linkedin</a></li>
-                            <li><a href="https://x.com/wan_loq">X (fomerly Twitter)</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p><strong>Other Resources</strong></p>
-                        <ul>
-                            <li><a href="./files/jinks-cv.pdf" download="Abuashia-Michael-Jinks-CV.pdf">Download My CV</a></li>
-                            <li><a href="#">Read My Blog</a></li>
-                            <li><a href="#">Watch My Youtube</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <p><small>&copy;2026 WanKraft LLC. All rights reserved. Created by Michael Jinks Abuashia for the ENSG & Turing Tech LLC Program</small></p>
-            </footer>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
 
-    </body>
+  </script>
+</body>
 </html>
